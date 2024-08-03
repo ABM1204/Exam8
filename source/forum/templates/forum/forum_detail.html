@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>{{ forum.title }}</h2>
+<p>{{ forum.content }}</p>
+<p>By {{ forum.author.username }} on {{ forum.created_at }}</p>
+
+<h3>Replies</h3>
+<ul>
+    {% for reply in replies %}
+        <li>
+            <img src="{{ reply.author.avatar.url }}" alt="{{ reply.author.username }}" width="50">
+            {{ reply.content }} - {{ reply.author.username }} on {{ reply.created_at }}
+        </li>
+    {% endfor %}
+</ul>
+
+<h3>Reply</h3>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Reply</button>
+</form>
+{% endblock %}
