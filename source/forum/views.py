@@ -1,7 +1,7 @@
+from django.core.paginator import Paginator
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
-from django.views import View
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Forum, Reply
 from .forms import ForumForm, ReplyForm
@@ -10,6 +10,7 @@ class ForumListView(ListView):
     model = Forum
     template_name = 'forum/index.html'
     context_object_name = 'forums'
+    paginate_by = 10
     ordering = ['-created_at']
 
 @method_decorator(login_required, name='dispatch')
@@ -30,7 +31,11 @@ class ForumDetailView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['replies'] = Reply.objects.filter(forum=self.get_object()).order_by('created_at')
+        replies = Reply.objects.filter(forum=self.get_object()).order_by('created_at')
+        paginator = Paginator(replies, 10)
+        page_number = self.request.GET.get('page')
+        page_obj = paginator.get_page(page_number)
+        context['page_obj'] = page_obj
         context['form'] = ReplyForm()
         return context
 

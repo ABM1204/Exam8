@@ -2,23 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Forum</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
+    <header class="bg-primary text-white py-3">
+        <nav class="container">
+            <ul class="nav justify-content-center">
                 {% if user.is_authenticated %}
-                    <li><a href="{% url 'logout' %}">Logout</a></li>
-                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="{% url 'logout' %}">Logout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="{% url 'index' %}">Home</a>
+                    </li>
                 {% else %}
-                    <li><a href="{% url 'login' %}">Login</a></li>
-                    <li><a href="{% url 'register' %}">Register</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="{% url 'login' %}">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="{% url 'register' %}">Register</a>
+                    </li>
                 {% endif %}
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="container mt-5">
         {% block content %}{% endblock %}
     </main>
 </body>
