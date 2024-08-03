@@ -1,7 +1,8 @@
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import redirect
 from django.utils.decorators import method_decorator
-from django.views.generic import ListView, DetailView, CreateView
+from django.views import View
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Forum, Reply
 from .forms import ForumForm, ReplyForm
 
@@ -29,7 +30,7 @@ class ForumDetailView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['replies'] = Reply.objects.filter(forum=self.get_object())
+        context['replies'] = Reply.objects.filter(forum=self.get_object()).order_by('created_at')
         context['form'] = ReplyForm()
         return context
 
@@ -43,3 +44,20 @@ class ForumDetailView(DetailView):
             reply.save()
             return redirect('forum_detail', pk=forum.pk)
         return self.get(request, *args, **kwargs)
+
+@method_decorator(login_required, name='dispatch')
+class ReplyUpdateView(UpdateView):
+    model = Reply
+    form_class = ReplyForm
+    template_name = 'forum/edit_reply.html'
+
+    def get_success_url(self):
+        return self.object.forum.get_absolute_url()
+
+@method_decorator(login_required, name='dispatch')
+class ReplyDeleteView(DeleteView):
+    model = Reply
+    template_name = 'forum/delete_reply.html'
+
+    def get_success_url(self):
+        return self.object.forum.get_absolute_url()

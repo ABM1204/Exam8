@@ -11,6 +11,10 @@
         <li>
             <img src="{{ reply.author.avatar.url }}" alt="{{ reply.author.username }}" width="50">
             {{ reply.content }} - {{ reply.author.username }} on {{ reply.created_at }}
+            {% if reply.author == user %}
+                <a href="{% url 'edit_reply' reply.id %}">Edit</a>
+                <a href="{% url 'delete_reply' reply.id %}">Delete</a>
+            {% endif %}
         </li>
     {% endfor %}
 </ul>
