@@ -6,3 +6,6 @@ class CustomUser(AbstractUser):
 
     def __str__(self):
         return self.username
+
+    def comment_count(self):
+        return self.reply_set.count()

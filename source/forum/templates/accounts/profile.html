@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<h2 class="text-center">Profile</h2>
+<div class="text-center">
+    {% if user.avatar %}
+        <img src="{{ user.avatar.url }}" alt="{{ user.username }}" class="rounded-circle" width="150" height="150">
+    {% else %}
+        <img src="{% static 'images/default_avatar.png' %}" alt="{{ user.username }}" class="rounded-circle" width="150" height="150">
+    {% endif %}
+    <h3>{{ user.username }}</h3>
+    <p>Joined: {{ user.date_joined|date:"F j, Y, g:i a" }}</p>
+    <p>Number of Comments: {{ user.comment_count }}</p>
+</div>
+
+<h3 class="mt-4">Your Forums</h3>
+<ul class="list-group">
+    {% for forum in user_forums %}
+        <li class="list-group-item">
+            <a href="{% url 'forum_detail' forum.id %}" class="d-flex justify-content-between align-items-center">
+                <span>{{ forum.title }}</span>
+                <span>{{ forum.created_at|date:"F j, Y, g:i a" }}</span>
+                <span>{{ forum.replies.count }} replies</span>
+            </a>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}

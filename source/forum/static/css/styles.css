@@ -137,3 +137,9 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+.list-group-item div {
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+}

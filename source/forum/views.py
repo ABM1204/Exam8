@@ -31,7 +31,7 @@ class ForumDetailView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        replies = Reply.objects.filter(forum=self.get_object()).order_by('created_at')
+        replies = Reply.objects.filter(forum=self.get_object()).order_by('-created_at')
         paginator = Paginator(replies, 10)
         page_number = self.request.GET.get('page')
         page_obj = paginator.get_page(page_number)
