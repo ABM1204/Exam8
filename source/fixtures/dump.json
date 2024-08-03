@@ -1,0 +1,1005 @@
+[
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "forum",
+        "model": "forum"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "forum",
+        "model": "reply"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "accounts",
+        "model": "customuser"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "3z63bj9birylrjcnhy9f19zl46vucbfv",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAURP-FtSEIl5dL9_0GwuVSqRpISrsy_ruSdKHJrOacmRcLcd9K2Htew0Lsws7s9NthTI9cB6B7rLfGU6vbuiAfCj9o51Oj_Lwe7t9Bib2MtTPSafDKy4xkDDmZ9KyJAKPJPpM3CoS2yrsEM7lvQAsgtM6iSIm9P950N_8:1saCcx:0-cxo_qwMyfm6RmhfxGbZC6Wlox9WBioHEfmFaVUQP8",
+        "expire_date": "2024-08-17T11:08:47.048Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "mnmnjxk4p1me32xcts6zihsrxqyrpzdy",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCgLQwu3XsGMjMMUjVtUtqV8e7apAvd_vfef6mE21rT1mRJY1Zn1anT70bID5l2kO843WbN87QuI-ld0Qdt-jpneV4O9--gYqvfesAIErvAHYGPGIwRJt87w4NhIBucAGTjhawrZSjGg1BvGXKwucRevT_cPjfi:1saD6F:sIJiePTGm2KTLMO57srvo8NjQu9RRMe1_acVF_iwpbw",
+        "expire_date": "2024-08-17T11:39:03.885Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "q95z6avrlv2kp00zyab2q0erxoo4dqox",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAURP-FtSEIl5dL9_0GwuVSqRpISrsy_ruSdKHJrOacmRcLcd9K2Htew0Lsws7s9NthTI9cB6B7rLfGU6vbuiAfCj9o51Oj_Lwe7t9Bib2MtTPSafDKy4xkDDmZ9KyJAKPJPpM3CoS2yrsEM7lvQAsgtM6iSIm9P950N_8:1saCcy:xZZhi-yDCTh-ASJFI9Z-jaQyaLAshcEjgp1l-lsuXYk",
+        "expire_date": "2024-08-17T11:08:48.516Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "uv24zzkiazkq75qko733fsdzeotci3dj",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAURP-FtSEIl5dL9_0GwuVSqRpISrsy_ruSdKHJrOacmRcLcd9K2Htew0Lsws7s9NthTI9cB6B7rLfGU6vbuiAfCj9o51Oj_Lwe7t9Bib2MtTPSafDKy4xkDDmZ9KyJAKPJPpM3CoS2yrsEM7lvQAsgtM6iSIm9P950N_8:1saCcu:ayH2X4skqhzcOtRZSeFX4T_e70M9dd2ukisnikAS5hs",
+        "expire_date": "2024-08-17T11:08:44.803Z"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add forum",
+        "content_type": [
+            "forum",
+            "forum"
+        ],
+        "codename": "add_forum"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change forum",
+        "content_type": [
+            "forum",
+            "forum"
+        ],
+        "codename": "change_forum"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete forum",
+        "content_type": [
+            "forum",
+            "forum"
+        ],
+        "codename": "delete_forum"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view forum",
+        "content_type": [
+            "forum",
+            "forum"
+        ],
+        "codename": "view_forum"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add reply",
+        "content_type": [
+            "forum",
+            "reply"
+        ],
+        "codename": "add_reply"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change reply",
+        "content_type": [
+            "forum",
+            "reply"
+        ],
+        "codename": "change_reply"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete reply",
+        "content_type": [
+            "forum",
+            "reply"
+        ],
+        "codename": "delete_reply"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view reply",
+        "content_type": [
+            "forum",
+            "reply"
+        ],
+        "codename": "view_reply"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add user",
+        "content_type": [
+            "accounts",
+            "customuser"
+        ],
+        "codename": "add_customuser"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change user",
+        "content_type": [
+            "accounts",
+            "customuser"
+        ],
+        "codename": "change_customuser"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete user",
+        "content_type": [
+            "accounts",
+            "customuser"
+        ],
+        "codename": "delete_customuser"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view user",
+        "content_type": [
+            "accounts",
+            "customuser"
+        ],
+        "codename": "view_customuser"
+    }
+},
+{
+    "model": "accounts.customuser",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$bwPsaKIdTEgU7FoFRbxjTh$1PzHXvtPvOem1H7L//Gbc+UFLZ2gcJYxANI9PlhrUvA=",
+        "last_login": "2024-08-03T11:08:48.965Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-08-03T07:41:57.616Z",
+        "avatar": "",
+        "is_moderator": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.customuser",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$I3hk7lG2GWWyjnbYn40MMD$M9i6XQk+zo0Ja9ACpICTiq1JrAYFLKvQjDiO7R7+gLo=",
+        "last_login": "2024-08-03T10:19:46.912Z",
+        "is_superuser": false,
+        "username": "ABM1204",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-08-03T07:44:19.301Z",
+        "avatar": "avatars/photo_2024-05-09_17-29-38.jpg",
+        "is_moderator": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.customuser",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$TtkBCxCUA1Vtd83XpZ9sAl$KALUyYshUIWfQEZo1IJY9nYSSLRvGymOs2EMDXKVsdQ=",
+        "last_login": "2024-08-03T11:39:03.881Z",
+        "is_superuser": false,
+        "username": "ABM11205",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-08-03T09:24:39.471Z",
+        "avatar": "",
+        "is_moderator": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.customuser",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$Gwz7mwiTtQx5DWyS3tDDoU$x5hDV5g9Yf+mG3u68HIadvTYoSDQEksShBeYl+zM5dQ=",
+        "last_login": "2024-08-03T11:11:47.658Z",
+        "is_superuser": false,
+        "username": "moder",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-08-03T11:11:11.003Z",
+        "avatar": "",
+        "is_moderator": true,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.customuser",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$fUgZqCw8hq5NN43jEzn11i$1A0b3K0s3gmtIGYoGBNCSQ5ZigfgeRhGXCx66esAKoI=",
+        "last_login": "2024-08-03T11:37:46.714Z",
+        "is_superuser": false,
+        "username": "ABM1206",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-08-03T11:37:45.496Z",
+        "avatar": "avatars/channels4_profile.jpg",
+        "is_moderator": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "forum.reply",
+    "pk": 1,
+    "fields": {
+        "forum": 2,
+        "content": "выфвыфвыфвыфв",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T08:21:59.457Z"
+    }
+},
+{
+    "model": "forum.reply",
+    "pk": 2,
+    "fields": {
+        "forum": 2,
+        "content": "ыфвыфвыфвыфв",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T08:22:03.342Z"
+    }
+},
+{
+    "model": "forum.reply",
+    "pk": 4,
+    "fields": {
+        "forum": 12,
+        "content": "dasdasmkldmasd",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T09:01:03.727Z"
+    }
+},
+{
+    "model": "forum.reply",
+    "pk": 9,
+    "fields": {
+        "forum": 2,
+        "content": "dsdbsandnaskjd",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T10:22:32.968Z"
+    }
+},
+{
+    "model": "forum.reply",
+    "pk": 10,
+    "fields": {
+        "forum": 2,
+        "content": "adjskabdkjasbdksajdsakjndsa",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T10:22:39.296Z"
+    }
+},
+{
+    "model": "forum.reply",
+    "pk": 12,
+    "fields": {
+        "forum": 2,
+        "content": "asdnskjandkjasndkjasdnkjsadjkasdnkjasndksjadnkjsa",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T10:23:19.450Z"
+    }
+},
+{
+    "model": "forum.reply",
+    "pk": 13,
+    "fields": {
+        "forum": 2,
+        "content": "smadlksamdlksamdlkasmdlsakdm",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T10:23:24.037Z"
+    }
+},
+{
+    "model": "forum.reply",
+    "pk": 14,
+    "fields": {
+        "forum": 2,
+        "content": "dmsaldmsalkmdaslkmd",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T10:23:28.888Z"
+    }
+},
+{
+    "model": "forum.reply",
+    "pk": 15,
+    "fields": {
+        "forum": 2,
+        "content": "samdklsamlkdmaslkdmas",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T10:23:33.398Z"
+    }
+},
+{
+    "model": "forum.reply",
+    "pk": 16,
+    "fields": {
+        "forum": 2,
+        "content": "mdsalmdsalkmda",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T10:23:37.553Z"
+    }
+},
+{
+    "model": "forum.reply",
+    "pk": 17,
+    "fields": {
+        "forum": 2,
+        "content": "d sald slamdlkas",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T10:23:42.611Z"
+    }
+},
+{
+    "model": "forum.reply",
+    "pk": 18,
+    "fields": {
+        "forum": 2,
+        "content": "samdlksanlkdnas",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T10:24:04.670Z"
+    }
+},
+{
+    "model": "forum.reply",
+    "pk": 21,
+    "fields": {
+        "forum": 2,
+        "content": "ыфлвтдлыфтвыфоллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллвdsfdsf",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T10:28:40.786Z"
+    }
+},
+{
+    "model": "forum.reply",
+    "pk": 22,
+    "fields": {
+        "forum": 20,
+        "content": "dsabdsabdjasbdjksadnsakda",
+        "author": [
+            "ABM1206"
+        ],
+        "created_at": "2024-08-03T11:38:23.847Z"
+    }
+},
+{
+    "model": "forum.reply",
+    "pk": 23,
+    "fields": {
+        "forum": 20,
+        "content": "dsajkdjsandkjsanjdkasndkjsad",
+        "author": [
+            "ABM1206"
+        ],
+        "created_at": "2024-08-03T11:38:27.731Z"
+    }
+},
+{
+    "model": "forum.reply",
+    "pk": 24,
+    "fields": {
+        "forum": 20,
+        "content": "asndkjsandjksandkjsandkjsandsakjdna",
+        "author": [
+            "ABM1206"
+        ],
+        "created_at": "2024-08-03T11:38:32.534Z"
+    }
+},
+{
+    "model": "forum.reply",
+    "pk": 25,
+    "fields": {
+        "forum": 20,
+        "content": "dnsaldnsakdjksanksajnsakjcnjkasncjkasc",
+        "author": [
+            "ABM1206"
+        ],
+        "created_at": "2024-08-03T11:38:38.529Z"
+    }
+},
+{
+    "model": "forum.reply",
+    "pk": 26,
+    "fields": {
+        "forum": 20,
+        "content": "sandskjandskjadsad",
+        "author": [
+            "ABM1206"
+        ],
+        "created_at": "2024-08-03T11:38:43.357Z"
+    }
+},
+{
+    "model": "forum.reply",
+    "pk": 27,
+    "fields": {
+        "forum": 20,
+        "content": "sd ad sakmdklsamdklasmdlksada",
+        "author": [
+            "ABM11205"
+        ],
+        "created_at": "2024-08-03T11:39:12.127Z"
+    }
+},
+{
+    "model": "forum.reply",
+    "pk": 28,
+    "fields": {
+        "forum": 20,
+        "content": "dmskamdlsamdlksad",
+        "author": [
+            "ABM11205"
+        ],
+        "created_at": "2024-08-03T11:39:15.778Z"
+    }
+},
+{
+    "model": "forum.reply",
+    "pk": 29,
+    "fields": {
+        "forum": 20,
+        "content": "amsdlsamldmasldasd",
+        "author": [
+            "ABM11205"
+        ],
+        "created_at": "2024-08-03T11:39:20.813Z"
+    }
+},
+{
+    "model": "forum.forum",
+    "pk": 1,
+    "fields": {
+        "title": "DDDD",
+        "content": "dmsklamdlkamdalskmd",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T07:44:32.374Z"
+    }
+},
+{
+    "model": "forum.forum",
+    "pk": 2,
+    "fields": {
+        "title": "DDDD",
+        "content": "dmsklamdlkamdalskmd",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T07:44:32.491Z"
+    }
+},
+{
+    "model": "forum.forum",
+    "pk": 3,
+    "fields": {
+        "title": "вфывв",
+        "content": "фырвщыфрвшфыг",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T07:50:29.932Z"
+    }
+},
+{
+    "model": "forum.forum",
+    "pk": 4,
+    "fields": {
+        "title": "dsadasd",
+        "content": "sadsadasdasdasd",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T08:57:50.565Z"
+    }
+},
+{
+    "model": "forum.forum",
+    "pk": 5,
+    "fields": {
+        "title": "sadsaondaskj",
+        "content": "ndjsakndkjasndak",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T08:57:57.050Z"
+    }
+},
+{
+    "model": "forum.forum",
+    "pk": 6,
+    "fields": {
+        "title": "dsnajkdnaskjdn",
+        "content": "dnsakjdnaskjdnaskjdans",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T08:58:06.242Z"
+    }
+},
+{
+    "model": "forum.forum",
+    "pk": 7,
+    "fields": {
+        "title": "sandkjnaskdnas",
+        "content": "djnaskdnsakjdnakjdnas",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T08:58:14.574Z"
+    }
+},
+{
+    "model": "forum.forum",
+    "pk": 8,
+    "fields": {
+        "title": "dsandkand",
+        "content": "ndsjakndkjandkadn",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T08:58:23.926Z"
+    }
+},
+{
+    "model": "forum.forum",
+    "pk": 9,
+    "fields": {
+        "title": "ndsakldnaslkd",
+        "content": "dnsandjkasndaskjnkj",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T08:58:32.602Z"
+    }
+},
+{
+    "model": "forum.forum",
+    "pk": 10,
+    "fields": {
+        "title": "sandjkasndaksj",
+        "content": "sdnasndkjasndkjasnd",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T08:58:39.517Z"
+    }
+},
+{
+    "model": "forum.forum",
+    "pk": 11,
+    "fields": {
+        "title": "sadasnkjdansd",
+        "content": "snajkdnkjsandksjandkjandsj",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T08:58:46.940Z"
+    }
+},
+{
+    "model": "forum.forum",
+    "pk": 12,
+    "fields": {
+        "title": "dsjkandkjasnd",
+        "content": "dkjsadasndkasndkjasndkjasnd",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T08:58:54.553Z"
+    }
+},
+{
+    "model": "forum.forum",
+    "pk": 13,
+    "fields": {
+        "title": "asndksandkj",
+        "content": "ndaskndkadkjasndkjad",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T08:59:01.575Z"
+    }
+},
+{
+    "model": "forum.forum",
+    "pk": 14,
+    "fields": {
+        "title": "sandkjsankdj",
+        "content": "djaskndkjand",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T08:59:08.177Z"
+    }
+},
+{
+    "model": "forum.forum",
+    "pk": 15,
+    "fields": {
+        "title": "sandjkasnkdjasnkd",
+        "content": "dnksandkjasndkjasnda",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T08:59:19.788Z"
+    }
+},
+{
+    "model": "forum.forum",
+    "pk": 16,
+    "fields": {
+        "title": "dsandkasn",
+        "content": "dnaskjdnakjndakjsnd",
+        "author": [
+            "ABM1204"
+        ],
+        "created_at": "2024-08-03T08:59:29.891Z"
+    }
+},
+{
+    "model": "forum.forum",
+    "pk": 19,
+    "fields": {
+        "title": "sdas",
+        "content": "asudsakjdnaskjdnkajsd",
+        "author": [
+            "moder"
+        ],
+        "created_at": "2024-08-03T11:22:29.346Z"
+    }
+},
+{
+    "model": "forum.forum",
+    "pk": 20,
+    "fields": {
+        "title": "dsa a sdksamdksamdkasmdskad",
+        "content": "sandbkjasdkjsanjkdsankdja",
+        "author": [
+            "moder"
+        ],
+        "created_at": "2024-08-03T11:22:51.386Z"
+    }
+}
+]

@@ -5,6 +5,11 @@
 <p>{{ forum.content }}</p>
 <p>By {{ forum.author.username }} on {{ forum.created_at }}</p>
 
+{% if user == forum.author or user.is_moderator %}
+    <a href="{% url 'edit_forum' forum.pk %}" class="btn btn-secondary">Edit Forum</a>
+    <a href="{% url 'delete_forum' forum.pk %}" class="btn btn-danger">Delete Forum</a>
+{% endif %}
+
 <h3 class="mt-4">Replies</h3>
 <ul class="list-group">
     {% for reply in page_obj %}
@@ -22,10 +27,10 @@
                     <span>{{ reply.author.reply_set.count }} replies</span>
                 </div>
             </div>
-            {% if reply.author == user %}
+            {% if user == reply.author or user.is_moderator %}
                 <div class="ml-3">
-                    <a href="{% url 'edit_reply' reply.id %}" class="btn btn-secondary btn-sm">Edit</a>
-                    <a href="{% url 'delete_reply' reply.id %}" class="btn btn-danger btn-sm">Delete</a>
+                    <a href="{% url 'edit_reply' reply.pk %}" class="btn btn-secondary btn-sm">Edit</a>
+                    <a href="{% url 'delete_reply' reply.pk %}" class="btn btn-danger btn-sm">Delete</a>
                 </div>
             {% endif %}
         </li>
